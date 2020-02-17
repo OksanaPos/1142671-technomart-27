@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 input{
   outline: none;
 }
@@ -9,6 +12,9 @@ input{
 .d-flex {
   display: flex;
 
+}
+.mr-0 {
+  margin-right: 0 !important;
 }
 .flex-column{
   flex-direction: column;
@@ -69,6 +75,12 @@ width: 280px;
 }
 .red-link{
   background-color: #EE3643;
+}
+.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 17px;
+  font-size: 16px;
 }
 .red-link:hover{
   box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
@@ -171,25 +183,34 @@ width: 280px;
   margin-top: 59px;
 }
 .catalog-block{
-padding-left: 25px;
-padding-right: 40px;
-border: 1px solid #979797;
+  padding-left: 25px;
+  padding-right: 40px;
+  border: 1px solid #979797;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.catalog-block:last-child {
+  margin-right: 0;
 }
 .catalog-block h4{
-  font-size: 30px;
+  font-size: 24px;
   color: #ffffff;
   margin-bottom: 13px;
   text-align: left;
   margin: 0px;
   margin-top: 15px;
+  white-space: nowrap;
+
 }
 .catalog-block p{
   background-color: #e5ab3f;
   padding: 10px 25px;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 11px;
   color: #ffffff;
   margin-bottom: 22px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .catalog-block img{
   margin-left: 10px;
@@ -279,14 +300,65 @@ border: 1px solid #979797;
   height: 266px;
   background-image: url("../img/Layer 99.png");
   color: #ffffff;
+  margin-right: 20px;
 }
 ul{
   list-style: none;
 }
 .promo-pop{
   background-color: #f9f5f0;
+  padding: 25px 25px;
+}
+.promo-pop p {
+  margin: 0;
+  color: #32425C;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  margin-right: 20px;
+  width: 220px;
+}
+.catalog-item:last-child {
+  margin-right: 0;
+}
+.catalog-item-title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.catalog-item s {
+  color: #A9A9A9;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.catalog-item-price {
+  background-image: url("../img/red-button.png");
+  color: #ffffff;
+  padding: 7px 46px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.catalog-item-price:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
 .services-list{
   background-color: #f5f8fa;
 }
