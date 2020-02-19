@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body{
+  font-family: "Cuprum";
+}
 input{
   outline: none;
 }
@@ -308,6 +311,8 @@ ul{
 .promo-pop{
   background-color: #f9f5f0;
   padding: 25px 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .promo-pop p {
   margin: 0;
@@ -359,9 +364,38 @@ ul{
 .catalog-item-price:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
+.catalog-company{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.company-item {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  border: 1px solid #eaeaea;
+  width: 220px;
+  padding: 40px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.company-item:last-child{
+  margin-right: 0px;
+}
 .services-list{
   background-color: #f5f8fa;
 }
+.services-list h1{
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
 .service-delivery {
   width:240px;
   padding: 0;
@@ -372,11 +406,23 @@ ul{
   color: #ffffff;
   background-color: #32425C;
 }
+
 .about-company{
-  /* background-color: #f9f5f0; */
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: center;
+}
+h2{
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 79px;
 }
 .map{
-  /* background-color: #f9f5f0; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 .footer1{
   background-color: #32425C;

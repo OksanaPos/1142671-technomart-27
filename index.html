@@ -6,6 +6,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
   <header>
@@ -208,54 +210,56 @@
         </li>
       </ul>
 
-      <div>
+      <div class="promo-pop d-flex align-center justify-between">
         <p>Популярные производители:<p>
-        <a href="./catalog.html">все производители</a>
+        <a class="btn red-link" href="./catalog.html">все производители</a>
       </div>
 
-      <ul class="catalog-company">
+      <div class="catalog-company">
 
-        <li>
+        <div class="company-item">
           <a href="#">
           <img src="./img/bosch.png" alt="BOSCH ">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/Makita.png" alt="Makita">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/DeWalt.png" alt="DeWalt">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/Интерскол.png" alt="Интерскол">
           </a>
-        </li>
-        <li>
+        </div>
+      </div>
+      <div class="catalog-company">
+        <div class="company-item">
           <a href="#">
           <img src="./img/Hitachi.png" alt="Hitachi">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/LG.png" alt="LG">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/AEG.png" alt="AEG">
           </a>
-        </li>
-        <li>
+        </div>
+        <div class="company-item">
           <a href="#">
           <img src="./img/Metabo.png" alt="Metabo">
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -263,40 +267,45 @@
     <div class="container">
       <div class="services-list">
         <h1>Сервисы</h1>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="service-delivery">
-          <li>доставка</li>
-          <li>гарантия</li>
-          <li>кредит</li>
-        </ul>
+        <select name="service-delivery">
+          <option selected>доставка</option>
+          <option>гарантия</option>
+          <option>кредит</option>
+        </select>
+
+        <div class="auto-img">
         <img src="./img/Layer 131.png">
+      </div>
+
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="lastblock">
     <div class="container">
     <div class="about-company">
-      <h1> компания "техномарт"</h1>
+      <h2> компания "техномарт"</h2>
       <p>Настоящий мужской шоппинг начинается здесь!
-        Огромный выбор товаров для ремонта и строительства не оставит
-        равнодушными любителей сэкономить на гастарбайтерах.
-        Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями: </p>
+        Огромный выбор товаров для ремонта и<br> строительства не оставит
+        равнодушными любителей сэкономить на гастарбайтерах.<br><br>
+        Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        Техномарт работает со многими транспортными компаниями: <br></p>
       <ul>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
-        <a href="#">подробнее о компании</a>
+        <a class="btn red-link" href="#">подробнее о компании</a>
       </ul>
     </div>
+    
     <div class="map">
-      <h1>контакты</h1>
+      <h2>контакты</h2>
       <p>Вы можете забрать товар сами,
         заехав в наш офис:</p>
       <img src="./img/map.png">
-      <a href="#">заблудились?напишите нам</a>
+      <a class="btn red-link" href="#">заблудились?напишите нам</a>
     </div>
   </div>
   </section>
