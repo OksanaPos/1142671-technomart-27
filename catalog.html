@@ -5,6 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     rel="stylesheet">
+    <script src="./js/.catalog.js"></script>
     <link rel="stylesheet" href="./css/catalog.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
@@ -56,7 +57,7 @@
           </div>
 
           <div class="header-login d-flex align-center">
-            <a href="#"><img src="./img/icon-login.svg"><span>Войти</span></a>
+            <a class="login-link" href="#"><img src="./img/icon-login.svg"><span>Войти</span></a>
             <a><span>Регистрация</span></a>
           </div>
         </div>
@@ -75,15 +76,17 @@
         </div>
       </section>
   </header>
-  <main class="main-container">
+  <main class="container">
     <div class="inner-page-container">
-      <h1 class="page-title">перфораторы</h1>
+      <div class="d-flex">
       <ul class="breadcrumbs">
         <li><a href="index.html">главная</a></li>
         <li class="breadcrumbs-catalog">каталог</li>
         <li class="breadcrumbs-tool">инструмент</li>
         <li class="breadcrumbs-current">перфораторы</li>
       </ul>
+    </div>
+  <h1 class="page-title">перфораторы</h1>
 
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -216,34 +219,28 @@
   </main>
   <footer>
   </footer>
-<section class="modal modal-login">
-  <h2>Личный кабинет</h2>
-  <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label class="visually-hidden" for="user-login">логин</label>
-      <input class="login-icon-user" id="user-login" type="text" name="login"
-      placeholder="email@example.ru">
-    </p>
-    <p>
-      <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class="login-icon-password" id="user-password" type="password"
-      name="password"
-      placeholder=".......">
-    </p>
-    <p class="login-help">
-      <label class="login-checkbox">
-        <input type="checkbox" name="remember" class="visually-hidden">
-        <span class="checkbox-indicator"></span>
-        Запомните меня
-      </label>
-      <a class="restore" href="#">я забыл пароль</a>
-    </p>
-    <button class="button" type="submit">Войти</button>
-  </form>
-  <button class="modal-close" type="button">
-    <span class="visually-hidden"> закрыть</span>
-  </button>
+<section class="modal">
+  <div class="modal-login">
+    <div class="red-line"></div>
+  <div class="modal-login-form">
+    <form action="">
+      <label for="name-field">
+      <span class="modal-login-title">
+        Ваше имя:
+      </span>
+      <input placeholder="Имя Фамилия" class="modal-login-input" id="name-field" type="text">
+    </label>
+    <div class="modal-login-btn-bg">
+        <button type="button" class="modal-login-btn">
+            Отправить
+          </button>
+    </div>
+    </form>
+
+  </div>
+  </div>
+
 </section>
 </body>
+
 </html>
