@@ -220,6 +220,84 @@ width: 280px;
 .catalog-item-price:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
+.footer1 {
+  background-color: #32425c;
+}
+.footer2 {
+  background-color: #293449;
+  padding: 30px 0 ;
+}
+.footer1 .logo {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  height: 68px;
+}
+.footer-text {
+  max-width: 350px;
+  color: white;
+}
+.footer-nav ul {
+display: flex;
+  justify-content: space-between;
+}
+.footer-nav li {
+  margin-right: 30px;
+  color: white;
+}
+.footer-nav li:last-child {
+  margin-right: 0px;
+}
+.footer-nav li a{
+  color: #D8D8D8;
+  text-decoration: none;
+}
+.footer-nav li a:hover{
+  text-decoration: underline;
+}
+.footer-nav li a:active{
+  color: #919BA9;
+}
+.footer-nav2 li a{
+  color: #FFD180;
+  text-decoration: none;
+}
+.footer-nav2 li a:active{
+color:#7D7669 ;
+  text-decoration: none;
+}
+.footer-link_info p {
+  margin-right: 20px;
+  color: white;
+}
+.footer-link_info p a{
+  color: #E0BA78;
+  text-decoration: none;
+}
+.footer-link_info p a:hover{
+  text-decoration: underline;
+}
+.footer-link_info p a:active{
+  color: #EE3643;
+}
+.footer-info {
+  color: white;
+}
+.footer-social_link {
+  display: flex;
+}
+.footer-social_link a {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #212A3A;
+  margin-right: 5px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social_link a:hover {
+  background-color: #EE3643;
+}
  .modal{
   position: fixed;
   top: 0;
