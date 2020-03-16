@@ -177,6 +177,28 @@ width: 280px;
   text-decoration: none;
   color: #d8d8d8;
 }
+.hummer{
+  background-color: #F2F6F8!important;
+  min-height: 89px;
+}
+.breadcrumbs p img{
+  margin: 0 10px;
+}
+.breadcrumbs p{
+  font-family: "PT Sans";
+  text-transform: uppercase;
+}
+.filter{
+background-color: #F7F3EC;
+height: 38px;
+width: 220px;
+position: absolute;
+}
+.sorting{
+  position: relative;
+  left: 100px;
+}
+
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -269,6 +291,11 @@ width: 280px;
 .btn-green-border:active {
   border-color: #c1c6ce;
   color: #c2c6ce;
+}
+.hummer h1 {
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .footer1 {
@@ -588,7 +615,7 @@ color: white;
   animation-name: shake;
   animation-duration: 0.6s;
 }
-@@keyframes shake {
+@keyframes shake {
   0%,100% {transform: translateX(0);}
   10%,30%,50%,70%,90%{transform: translateX(-10px);}
   20%,40%,60%,80%{transform: translateX(10px);}

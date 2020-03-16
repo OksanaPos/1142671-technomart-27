@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="36" y="0" width="38" height="38" id="rect-1"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Catalog" transform="translate(-370.000000, -1592.000000)">
+            <g id="pages" transform="translate(334.000000, 1592.000000)">
+                <g id="active">
+                    <image x="36" y="0" width="38" height="38" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zQ8RMk0ySLG4ZVkijZMlYTGoW06C8be5c86JmrtudK2SrbCymLMTG28IXEFtlrRSRkpVPQGyk6zwzNF7KqdP5dZ5zznPOH7xh3bLyNX1QMB07GYtqk1PTWt0jPgK00ERIN4rWcCIRR+wr/rTXGzwqXvWoWX/f/7XGuXTRAE+98IBh2Y7wkHDHkmMpnhMO2bKU8LLibIU3FKcqvFeuGU+OCB8La0ZOlz7PtXC3kbML4FV/hVPfarLfuJBfND73UZf40+bEmMQ28XaKJIkRRSPFIvPkceiRaIKTXnZU08iCtWLPZ3OONiwKpLVR0+jt1iJ9EdFV6flbp2puQXYffAFfqZpLbcHpOrTeVXPhXQiuwcm5pdt6OeUT92Yy8HQEgSlovoSGmWKmP1K5xB+F2gfXfe6Euk14L7nu277rvh9I8z2cmRVtPmdxeAvjqxC/gO0d6JLZwdkParhnMRQBUBoAAAA4ZVhJZk1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAKgAgAEAAAAAQAAACagAwAEAAAAAQAAACYAAAAApzoCYQAAAJVJREFUWAntmEEKwCAMBGPpP/xaf6L9iT+1EXoQoYctpeQwgYCBlSzjnrTee/Yu3lGquJG8m9nhXb2jVB1G0sAUxdHsY5uHSGeMqa8BMYipBFQ9GYOYSkDVkzGIqQRUPRmDmEpA1ZMxiKkEVD0Zg5hKQNWTMYipBFQ9GXtDrKqXftDX8Qfb7kVlWZiW+evx6Yv19EXtAmiNnpLU9B6VAAAAAElFTkSuQmCC"></image>
+                    <use fill="#EE3643" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

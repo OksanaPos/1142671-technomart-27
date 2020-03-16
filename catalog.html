@@ -7,6 +7,7 @@
     rel="stylesheet">
     <script src="./js/.catalog.js"></script>
     <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
@@ -57,8 +58,8 @@
           </div>
 
           <div class="header-login d-flex align-center">
-            <a class="login-link popup-link" href="#"><img src="./img/icon-login.svg"><span>Войти</span></a>
-            <a><span>Регистрация</span></a>
+            <a class="login-link popup-link" href="#"><img src="./img/icon-login.svg"><span class="login-store">Войти</span></a>
+
           </div>
         </div>
         <div class="container-nav container">
@@ -76,18 +77,31 @@
         </div>
       </section>
   </header>
-  <main class="container">
+  <main >
+    <div class="container">
     <div class="inner-page-container">
-      <div class="d-flex">
-      <ul class="breadcrumbs">
-        <li><a href="index.html">главная</a></li>
-        <li class="breadcrumbs-catalog">каталог</li>
-        <li class="breadcrumbs-tool">инструмент</li>
-        <li class="breadcrumbs-current">перфораторы</li>
-      </ul>
+
+      <div class="breadcrumbs d-flex">
+        <p><a href="index.html">
+          <img src="./img/icon-home.png"></a></p>
+        <p><img src="./img/icon-right-small.svg">каталог</p>
+        <p><img src="./img/icon-right-small.svg">инструмент</p>
+        <p><img src="./img/icon-right-small.svg">перфораторы</p>
     </div>
-    <div class="filter">
+
+    <div class="hummer d-flex align-center justify-between promo-pop">
+<p>перфораторы</p>
+    </div>
+  </div>
+<div class="container d-flex">
+  <div>
+    <div class="filter d-flex">
       фильтр:
+    </div>
+
+
+
+      <div>
     <label for="size">
       <h4>цена:</h4>
       <input type="range" min="0" max="30000" step="1" value="15000" id="size"></input>
@@ -108,15 +122,17 @@
       <input type="radio" name="" value="сетевые"></input>
       </label>
       <input type="submit" value="показать"></input>
+    </div>
 
-    </div>
-    <div class="sorting">
-      <h4>сортировка:</h4>
-      <h4>по цене</h4>
-      <h4>по типу</h4>
-      <h4>по функционалу</h4>
-    </div>
-  <h1 class="page-title">перфораторы</h1>
+</div>
+<div>
+  <div class="filter sorting">
+    <p>сортировка:</p>
+    <p>по цене</p>
+    <p>по типу</p>
+    <p>по функционалу</p>
+  </div>
+
 
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -242,9 +258,18 @@
         </li>
       </ul>
     </div>
-    <section class="inner-content">
-      <h2>перфораторы</h2>
-      <h2>пара слов о перфораторах</h2>
+
+    <div class="align-center">
+      <img src="./img/active1.svg">
+      <img src="./img/2.svg">
+      <img src="./img/3.svg">
+      <img src="./img/next.svg">
+    </div>
+</div>
+</div>
+    <section class="hummer text">
+
+      <h1>пара слов о перфораторах</h1>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для
             сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы.
@@ -333,7 +358,7 @@
       <input placeholder="Имя Фамилия" class="modal-login-input" id="name-field" type="text">
      </label>
     <div class="modal-login-btn-bg">
-        <button type="button" class="modal-login-btn">
+        <button type="submit" class="modal-login-btn">
             Отправить
           </button>
     </div>

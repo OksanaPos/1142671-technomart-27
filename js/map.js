@@ -1,22 +1,31 @@
-var slideIndex=1;
-showSlides(slideIndex);
-function plusSlides(n){
-  showSlides(slideIndex+=n);
-}
-function currentSlide(n){
-  showSlides(slideIndex=n);
-}
-function showSlides(n){
-  var i;
-  var slides=document.getElementsByClassName('className');
-  if(n>slides.length){
-  slideIndex=1
-  }
-  if(n<1){
-    slideIndex=slides.length
-  }
-  for (var i = 0; i < slides.length; i++) {
-    slides[i]
-  }
-  slides[slideIndex-1].style.display="block";
-}
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [59.938428, 30.322192],
+          zoom: 17
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemarkWithContent = new ymaps.Placemark([59.938428, 30.322192], {
+          hintContent: 'Собственный значок метки с контентом',
+          iconContent: '12'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'images/ball.png',
+          // Размеры метки.
+          iconImageSize: [48, 48],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-24, -24],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
+      });
+
+  myMap.geoObjects
+      .add(myPlacemarkWithContent);
+});

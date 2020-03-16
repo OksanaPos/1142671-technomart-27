@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./css/catalog.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic"
-      rel="stylesheet"
-      type="text/css"/>
+      rel="stylesheet" type="text/css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic"
       rel="stylesheet" type="text/css"/>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<948e1852-10d2-4b03-bdcd-ab512b72c715>" type="text/javascript"></script>
   </head>
 
 <body>
@@ -338,13 +338,8 @@
           <div class="map">
             <h2>контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <img class="popup-link" src="./img/map.png" href="<iframe src="https://www.google.com/maps/embed?pb
-            =!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!
-            1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvt
-            C90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!
-            1sru!2sru!4v1583732412690!5m2!1sru!2sru" width="600" height="300" frameborder="0" style="border:0;
-            " allowfullscreen=""></iframe>">
-            <a class="btn red-link" href="#">заблудились?напишите нам</a>
+            <img class="popup-link" src="./img/map.png" href="">
+            <a class="btn red-link popup-link-feedback" href="#">заблудились?напишите нам</a>
           </div>
 
         </div>
@@ -404,38 +399,55 @@
   <!-- карта гугл -->
 <section class="modal">
         <div class="modal-map">
-            <div class="close-btn">
+            <div class="close-btn map">
                 <span></span>
+              </div>
+              <div id="map">
               </div>
         </div>
 </section>
-<!-- форма обратной связи -->
-<section class="modal-fid">
-  <form action="#">
-        <label for="name-field">
-              <span class="modal-login-title">
-              Ваше имя:
-              </span>
-            <input placeholder="Имя Фамилия" class="modal-login-input" id="name-field" type="text">
-        </label>
-        <label for="email-field">
-             <span class="modal-email-title">
-             Ваш e-mail:
-            </span>
-           <input placeholder="email@example.com" class="modal-email-input" id="email-field" type="text">
-        </label>
-        <label for="comment-field"> Текст письма:
-        </label>
-        <textarea name="comment" id="comment-field"
-          rows="10">В свободной форме
-        </textarea>
-        <div class="modal-login-btn-bg">
-              <button type="button" class="modal-login-btn">Отправить</button>
+<section class="modal-feedback">
+    <div class="modal-login">
+      <div class="red-line"></div>
+    <div class="modal-login-form">
+      <div class="close-btn">
+        <span></span>
+      </div>
+      <form action="">
+        <div class="d-flex">
+            <label for="name-field">
+                <span class="modal-login-title">
+                  Ваше имя:
+                </span>
+                <input placeholder="Имя Фамилия" class="modal-login-input" id="name-field" type="text">
+               </label>
+               <label for="email-field">
+                  <span class="modal-login-title">
+                    Ваш e-mail:
+                  </span>
+                  <input placeholder="email@example.com" class="modal-login-input" id="name-field" type="text">
+                 </label>
         </div>
-  </form>
+        <label for="comment-field">
+          <span class="modal-login-title">Текст письма:</span>
+            <textarea name="comment" class="modal-login-input" id="comment-field"
+            rows="10" >В свободной форме
+          </textarea>
+        </label>
+      <div class="modal-login-btn-bg">
+          <button type="submit" class="modal-login-btn">
+              Отправить
+            </button>
+      </div>
+      </form>
+    </div>
+    </div>
+  </section>
+
 </section>
     </footer>
     <script src="./js/catalog.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/map.js"></script>
   </body>
 </html>
