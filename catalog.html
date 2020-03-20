@@ -98,178 +98,246 @@
     <div class="filter d-flex">
       фильтр:
     </div>
+      <div class="d-flex flex-column">
+        <div class="filter-title">
+          Цена:
+        </div>
 
+        <div class="filter d-flex slidecontainer">
+          <input type="range" min="0" max="30000" value="0" class="slider" id="myRange"></input>
 
+        </div>
 
-      <div>
-    <label for="size">
-      <h4>цена:</h4>
-      <input type="range" min="0" max="30000" step="1" value="15000" id="size"></input>
-    </label>
-      <label>
-      производители:</label>
-      <input type="radio" name="BOSCH" value="BOSCH"></input>
-      <label>
-      <input type="radio" name="" value="интерскол"></input>
-      </label>
-      <input type="radio" name="" value="Makita"></input>
-      <input type="radio" name="" value="DeWalt"></input>
-      <input type="radio" name="" value="Hitachi"></input>
-      </label>
-      <label>
-      питание:
-      <input type="radio" name="" value="аккумуляторные"></input>
-      <input type="radio" name="" value="сетевые"></input>
-      </label>
-      <input type="submit" value="показать"></input>
+        <div class="filter-line">
+            <span></span>
+        </div>
+
+        <div class="filter-title">
+            Производители:
+          </div>
+
+          <label class="filter-item">
+              <input type="checkbox">
+              <div class="sqrt">
+                <img src="./img/checkbox.svg" alt="">
+              </div>
+              <span>BOSCH</span>
+          </label>
+
+          <label class="filter-item">
+              <input type="checkbox">
+              <div class="sqrt">
+                <img src="./img/checkbox.svg" alt="">
+              </div>
+              <span>интерскол</span>
+          </label>
+
+          <label class="filter-item">
+              <input type="checkbox">
+              <div class="sqrt">
+                <img src="./img/checkbox.svg" alt="">
+              </div>
+              <span>makita</span>
+          </label>
+
+          <label class="filter-item">
+              <input type="checkbox">
+              <div class="sqrt">
+                <img src="./img/checkbox.svg" alt="">
+              </div>
+              <span>dewalt</span>
+          </label>
+
+          <label class="filter-item">
+              <input type="checkbox">
+              <div class="sqrt">
+                <img src="./img/checkbox.svg" alt="">
+              </div>
+              <span>hitachi</span>
+          </label>
+
+          <div class="filter-line"><span></span></div>
+          <div class="filter-title">
+              Питание:
+            </div>
+            <label class="filter-item" for="radio1">
+                <input name="power" id="radio1" type="radio">
+                <div class="circle">
+                    <span></span>
+                </div>
+                <span>Аккумуляторные</span>
+            </label>
+            <label  class="filter-item" for="radio2">
+                <input name="power" id="radio2" type="radio">
+                <div class="circle">
+                    <span></span>
+                </div>
+                <span>Сетевые</span>
+            </label>
+            <div class="filter-show">
+              <span>показать</span>
+            </div>
     </div>
 
 </div>
 <div>
   <div class="filter sorting">
     <p>сортировка:</p>
-    <p>по цене</p>
+    <p class="redprice">по цене</p>
     <p>по типу</p>
     <p>по функционалу</p>
   </div>
 
+  <div>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 3000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 3000
+        </span>
+        <s>
+            22500 Р.
+        </s>
+        <span class="catalog-item-price">
+          15500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 6000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 6000
+        </span>
+        <s>
+            30500 Р.
+        </s>
+        <span class="catalog-item-price">
+          25500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 2000">
+        <div class="hover-block">
+          <button class="btn-green">
+              <title>icon-cart</title>
+               Купить
+          </button>
+          <button class="btn-green-border">
+               В Закладки
+          </button>
+        </div>
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 2000
+        </span>
+        <span class="catalog-item-price">
+          2 900 р
+        </span>
+      </li>
+    </ul>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 3000
+        </span>
+        <s>
+            22500 Р.
+        </s>
+        <span class="catalog-item-price">
+          15500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 6000
+        </span>
+        <s>
+            30500 Р.
+        </s>
+        <span class="catalog-item-price">
+          25500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 2000
+        </span>
+        <span class="catalog-item-price">
+          2 900 р
+        </span>
+      </li>
+    </ul>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 3000
+        </span>
+        <s>
+            22500 Р.
+        </s>
+        <span class="catalog-item-price">
+          15500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 6000
+        </span>
+        <s>
+            30500 Р.
+        </s>
+        <span class="catalog-item-price">
+          25500 р
+        </span>
+      </li>
+      <li class="catalog-item">
+        <img src="./img/snippet-32961 copy 3.png"
+        alt="Перфоратор BOSCH BFG 9000">
+        <span class="catalog-item-title">
+          Перфоратор BOSCH  BFG 2000
+        </span>
+        <span class="catalog-item-price">
+          2 900 р
+        </span>
+      </li>
+    </ul>
+  </div>
 
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 3000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 3000
-          </span>
-          <s>
-              22500 Р.
-          </s>
-          <span class="catalog-item-price">
-            15500 р
-          </span>
+  <div class="pagination">
+      <ul>
+        <li class="red">
+          1
         </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 6000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 6000
-          </span>
-          <s>
-              30500 Р.
-          </s>
-          <span class="catalog-item-price">
-            25500 р
-          </span>
-        </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 2000">
-          <div class="hover-block">
-            <button class="btn-green">
-                <title>icon-cart</title>
-                 Купить
-            </button>
-            <button class="btn-green-border">
-                 В Закладки
-            </button>
-          </div>
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 2000
-          </span>
-          <span class="catalog-item-price">
-            2 900 р
-          </span>
-        </li>
-      </ul>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 3000
-          </span>
-          <s>
-              22500 Р.
-          </s>
-          <span class="catalog-item-price">
-            15500 р
-          </span>
-        </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 6000
-          </span>
-          <s>
-              30500 Р.
-          </s>
-          <span class="catalog-item-price">
-            25500 р
-          </span>
-        </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 2000
-          </span>
-          <span class="catalog-item-price">
-            2 900 р
-          </span>
-        </li>
-      </ul>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 3000
-          </span>
-          <s>
-              22500 Р.
-          </s>
-          <span class="catalog-item-price">
-            15500 р
-          </span>
-        </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 6000
-          </span>
-          <s>
-              30500 Р.
-          </s>
-          <span class="catalog-item-price">
-            25500 р
-          </span>
-        </li>
-        <li class="catalog-item">
-          <img src="./img/snippet-32961 copy 3.png"
-          alt="Перфоратор BOSCH BFG 9000">
-          <span class="catalog-item-title">
-            Перфоратор BOSCH  BFG 2000
-          </span>
-          <span class="catalog-item-price">
-            2 900 р
-          </span>
-        </li>
+        <li>
+            2
+          </li>
+          <li>
+              3
+            </li>
+            <li class="next">
+                Следующая
+              </li>
       </ul>
     </div>
-
-    <div class="align-center">
-      <img src="./img/active1.svg">
-      <img src="./img/2.svg">
-      <img src="./img/3.svg">
-      <img src="./img/next.svg">
     </div>
-</div>
-</div>
-    <section class="hummer text">
 
-      <h1>пара слов о перфораторах</h1>
+
+</div>
+</div>
+    <section class="hummer">
+      <div class="container">
+          <span class="hummertext">пара слов о перфораторах</span>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для
             сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы.
@@ -278,10 +346,12 @@
             В ассортиментном ряду есть выбор «трехрежимников»: в
             одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
+      </div>
+
     </section>
 
   </main>
-  <footer>
+  <footer class="secondfooter">
     <section class="footer1">
       <div class="container">
         <div class="mb-4 d-flex justify-between align-center">
@@ -298,7 +368,7 @@
         </div>
         <div class="d-flex justify-between align-center">
             <p class="footer-text">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55 
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55 
             </p>
           <div class="footer-nav2 footer-nav">
             <ul>

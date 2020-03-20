@@ -180,6 +180,10 @@ width: 280px;
 .hummer{
   background-color: #F2F6F8!important;
   min-height: 89px;
+  padding: 20px 0;
+}
+.redprice{
+  color: red;
 }
 .breadcrumbs p img{
   margin: 0 10px;
@@ -187,18 +191,134 @@ width: 280px;
 .breadcrumbs p{
   font-family: "PT Sans";
   text-transform: uppercase;
+  font-size: 13px;
+}
+.slider{
+  -webkit-appearance:none;
+  appearance:none;
+  width: 100%;
+  height: 5px;
+  background: green;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover{
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance:none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-color:#e1d6d9;
+  cursor: pointer;
+  border-radius: 50%;
 }
 .filter{
 background-color: #F7F3EC;
 height: 38px;
 width: 220px;
-position: absolute;
 }
-.sorting{
+.filter.d-flex{
+  margin-right: 20px;
+}
+.filter-title {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+.filter-line {
+  display: flex;
+  justify-content: center;
+}
+.filter-line span {
+  margin: 10px 0 ;
+  height: 2px;
+  width: 90%;
+  background: #f8f3ec;
+}
+.filter-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.filter-item span {
+  text-transform: uppercase;
+  color: #464646;
+}
+.filter-item input {
+  display: none;
+}
+.filter-item .sqrt {
+  height: 13px;
+  width: 13px;
+  border: 1px solid #A9A9A9;
+  border-radius: 2px;
+  margin-right: 10px;
   position: relative;
-  left: 100px;
 }
+.filter-item img {
+  display: none;
+  position: absolute;
+    left: -2px;
+    top: -2px;
+    max-height: none;
+    height: 14px;
+    width: 20px;
+    max-width: none;
+}
+.filter-item input:checked + .sqrt img {
+  display: block;
+}
+.filter-item .circle {
+  height: 13px;
+  width: 13px;
+  border: 1px solid #A9A9A9;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+.filter-item .circle span {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  display: none;
+  background: #A9A9A9;
+}
+.filter-item input:checked + .circle span {
+  display: block;
+}
+.filter-show{
+  height: 38px;
+  width: 140px;
+  border: 1px solid #A9A9A9;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.filter-show span{
+  text-transform: uppercase;
+  font-family: "PT Sans";
+  color: #464646;
 
+}
+.sorting {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+}
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -292,12 +412,50 @@ position: absolute;
   border-color: #c1c6ce;
   color: #c2c6ce;
 }
-.hummer h1 {
-  color: #000000;
-  text-transform: uppercase;
-  padding: 10px;
+.pagination {
+  margin: 20px 0;
 }
+.pagination ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.pagination ul li {
+  height: 38px;
+  min-width: 38px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-right: 10px;
+}
+.pagination ul .red {
+  background: #EE3643;
+  border: none;
+  color:white;
+}
+.pagination ul .next {
+ width: 140px;
+ text-transform: uppercase;
+ font-family: "PT Sans";
+ font-size: 13px;
+}
+.hummertext {
+  text-transform: uppercase;
+  font-family: "Cuprum";
+  font-size: 30px;
 
+}
+.hummer p{
+  font-size: 13px;
+  font-family: "PT Sans";
+  line-height: 2;
+}
+.secondfooter{
+  margin: 0;
+}
 .footer1 {
   background-color: #32425c;
 }
@@ -387,10 +545,6 @@ color:#7D7669 ;
   align-items: center;
   justify-content: center;
   color: #000000;
-  /* background-color: #f8f8f0;
-  background-position: 0 0;
-  background-repeat: repeat; */
-  /* box-shadow: 0 30px 50px rgba(0,0,0,0.7) */
 }
 .modal-show .modal {
   display: flex;
@@ -418,7 +572,6 @@ color:#7D7669 ;
   flex-direction: column;
   justify-content: center;
   padding-left: 80px;
-  padding-right: 80px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -454,14 +607,6 @@ color:#7D7669 ;
 border: none;
 color: white;
 }
-/* .modal-login{
-  top:120px;
-  left: 50%;
-  width: 300px;
-  margin-left: -230px;
-  padding: 50px 80px;
-  display: none;
-} */
 .modal-close{
   position: absolute;
   top:0;
