@@ -53,6 +53,7 @@ img {
   text-transform: uppercase;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0px -5px 0px rgba(0, 0, 0, 0.2);
 }
+
 .search {
   width: 280px;
 }
@@ -229,6 +230,7 @@ img {
   margin-bottom: 22px;
   text-align: center;
   text-transform: uppercase;
+
 }
 .catalog-block img {
   margin-left: 10px;
@@ -237,6 +239,9 @@ img {
   background-color: #ffbf47;
   width: 300px;
   height: 123px;
+}
+.raw a{
+  text-decoration: none;
 }
 .tool {
   background-color: #3bbce3;
@@ -278,7 +283,9 @@ img {
 .technic img {
   margin-left: 10px;
 }
-
+.technic a{
+  text-decoration: none;
+}
 .sale {
   background-color: #8ed78f;
   width: 300px;
@@ -298,6 +305,9 @@ img {
 .sale img {
   margin-left: 10px;
 }
+.sale a{
+  text-decoration: none;
+}
 .delivery {
   background-color: #ffc047;
   width: 300px;
@@ -306,14 +316,27 @@ img {
 .delivery p {
   background-color: #e5ac3f;
 }
+.delivery a{
+  text-decoration: none;
+}
 .drill {
   width: 620px;
   height: 266px;
   background-image: url("../img/Layer 99.png");
   background-image: url("../img/Layer 99.png");
   color: #ffffff;
-  margin-right: 20px;
+  margin-right: 20px;}
+  /* animation-name: slider;
+  animation-duration: 3s;
 }
+@@keyframes slider {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+} */
 ul {
   list-style: none;
 }
